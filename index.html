@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>burgos.com — Simulador</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" role="application" aria-label="Simulador de buscador Burgos">
+    <div class="brand">
+      <h1>burgos.com</h1>
+      <p>Simulador de buscador — sugerencias en tiempo real</p>
+    </div>
+
+    <div class="search-card" role="region" aria-label="Buscador">
+      <div class="search-row">
+        <div class="wrap-input">
+          <input id="q" class="search-input" type="search" autocomplete="off"
+            placeholder="Escribe tu búsqueda..." aria-autocomplete="list"
+            aria-controls="dd" aria-expanded="false" />
+          <div id="dd" class="dropdown" hidden></div>
+        </div>
+        <button id="btn" class="btn-search" aria-label="Buscar">Buscar</button>
+      </div>
+      <div id="status" class="status" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
